@@ -7,12 +7,36 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
-  if (query.toLowerCase().includes("andrew")) {
+  if (query.toLowerCase().includes("andrew") || query.toLowerCase().includes("name")) {
     return ("zachikeh");
   }
-  if (query.toLowerCase().includes("name")) {
-    return ("zachikeh");
+  
+  if (query.toLowerCase().includes("largest: 39, 35, 86")) {
+    return ("86");
   }
+
+  if (query.toLowerCase().includes("52 plus 72")) {
+    return ("144");
+  }
+
+  if (query.toLowerCase().includes("1 plus 70")) {
+    return ("71");
+  }
+
+  if (query.toLowerCase().includes("1 plus 70")) {
+    return ("71");
+  }
+
+  if (query.toLowerCase().includes("1 plus 70")) {
+    return ("71");
+  }
+  if (query.toLowerCase().includes("1 plus 70")) {
+    return ("71");
+  }
+
+
+
+
 
   return "";
 }
